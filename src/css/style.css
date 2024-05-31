@@ -1,0 +1,27 @@
+
+  
+body {background-color:#B6D6BE}
+
+.promo {
+    height: 800px;
+    background: url(../img/Women.jpeg)
+}
+
+.background-image {  
+    /* background-image: url("/img/Women.jpeg");  Путь к фоновому изображению в HTML*/
+    height: 500px; /* Высота изображения */
+    width: 300px; /* Ширина изображения */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    float: center;  /* С помощью этого свойства можно выровнять элемент по левому или правому краю его родительского блока.  */
+    background-repeat: no-repeat; /* Не повторяем */
+    background-size: cover; /* Размер фона */
+    background-position: center; /* Позиция картинкипо центру */
+   padding-left: 600px;
+}
+
+
+.heading {
+    padding-left: 600px;
+}
