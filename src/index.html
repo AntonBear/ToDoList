@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- подключение CSS файла  -->
-    <script src="script.js"></script>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-    <!-- у form был атрибут action ='#' 
-    При нажатии на любой из этих двух вариантов кнопки происходит отправка формы по адресу, который указан у формы в атрибуте action, либо по адресу веб-страницы, если атрибут action не указан. Однако в коде javascript мы можем перехватить отправку, обрабатывая событие click
-    -->
-    <!-- <fieldset>     -->
-    <form name="search">         
-        <!-- <legend> To Do List</legend> -->
-        <!-- <label for ='name'>What you want to do?</label> -->
-        <!-- по атрибуту name='key' JS находит элемент -->
-        <input type="text" name="key"></input>
-        <input type="submit" name="send" value="Add">
+  <body>
+    <div class="container">
+      <div class="item1"></div>
+      <div class="item2">Anton's To-Do List</div>
+      <div class="item3"></div>
+      <div class="item4">
+        <div class="Completed">Some text</div>
+        <button class="btn1">+Add a task</button>
+      </div>
+      <button onclick="alert('Ура получилось!')" class="btn">
+        +Add a task
+      </button>
+
+      <button onclick="alert('Ура получилось!')" class="btn">
+        +Add a task
+      </button>
+    </div>
+    <!-- <form name="search">          -->
+    <!-- <legend> To Do List</legend> -->
+    <!-- <label for ='name'>What you want to do?</label> -->
+    <!-- по атрибуту name='key' JS находит элемент -->
+    <!-- <input type="text" name="key"></input>
+        <input type="submit" name="send" value="Add"> -->
     <!-- </fieldset> -->
-    </form>
-  
-
-
+    <!-- </form> -->
 
     <!-- обычная форма кнопки -->
     <!-- <form>
@@ -34,13 +42,7 @@
         </ul> -->
     <!--https://webmaster.alexanderklimov.ru/javascript/buttonclick.php  -->
 
-
-<img class="background-image" src="img/Women.jpeg" alt="Alice">
-
-    
-
-
-
-
-</body>
+    <!-- <img class="background-image" src="img/Women.jpeg" alt="Alice"> -->
+    <script src="script.js"></script>
+  </body>
 </html>

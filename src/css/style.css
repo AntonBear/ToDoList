@@ -1,27 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  
-body {background-color:#B6D6BE}
+html {
+  font-size: 16px;
+  height: 100%;
+}
+body {
+  background-color: #fff1f2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 30%;
+  min-width: 600px;
+  display: grid;
+  grid-template-rows: 6px minmax(100px, 100px);
+}
+
+.container div {
+  /* background-color: gray; */
+  /* min-width: 100px;
+  min-height: 100px; */
+  border: 0.05rem solid rgb(218, 219, 219);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item1 {
+  grid-column: 1 / 2;
+  background-color: rgb(110, 151, 213);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.item2 {
+  grid-column: 1 / 2;
+  background-color: white;
+  font-size: 2.5em;
+}
+
+.item3 {
+  grid-column: 1 / 2;
+  background-color: white;
+  display: grid;
+  /* grid-template-rows: minmax(50px, 1fr); */
+  grid-template-rows: minmax(50px, 70px);
+}
+
+.item4 {
+  /* grid-column: 1 / 2; */
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  border: none;
+  color: black;
+}
 
 .promo {
-    height: 800px;
-    background: url(../img/Women.jpeg)
+  height: 800px;
+  background: url(../img/Women.jpeg);
 }
 
-.background-image {  
-    /* background-image: url("/img/Women.jpeg");  Путь к фоновому изображению в HTML*/
-    height: 500px; /* Высота изображения */
-    width: 300px; /* Ширина изображения */
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    float: center;  /* С помощью этого свойства можно выровнять элемент по левому или правому краю его родительского блока.  */
-    background-repeat: no-repeat; /* Не повторяем */
-    background-size: cover; /* Размер фона */
-    background-position: center; /* Позиция картинкипо центру */
-   padding-left: 600px;
+.background-image {
+  /* background-image: url("/img/Women.jpeg");  Путь к фоновому изображению в HTML*/
+  height: 500px; /* Высота изображения */
+  width: 300px; /* Ширина изображения */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: center; /* С помощью этого свойства можно выровнять элемент по левому или правому краю его родительского блока.  */
+  background-repeat: no-repeat; /* Не повторяем */
+  background-size: cover; /* Размер фона */
+  background-position: center; /* Позиция картинкипо центру */
+  padding-left: 600px;
 }
-
 
 .heading {
-    padding-left: 600px;
+  padding-left: 600px;
+}
+
+.btn {
+  color: red;
 }
