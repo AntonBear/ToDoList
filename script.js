@@ -12,15 +12,25 @@ btn1.addEventListener('click', function addDiv() {
   parentElement.append(newDiv)
 })
 
+
 class ToDoList {
-  constructor() {
-    this.posts = 0
-    this.postsDone = 0
-  }
-}
+    constructor() {
+        this.posts = 0;
+        this.postsDone = 0;
+    }
+} 
+
+
+
 
 const arr = []
-const counter = function () {}
+const counter = function () {
+
+}
+
+
+
+
 
 // const btn1 = document.querySelector('.btn1')
 
