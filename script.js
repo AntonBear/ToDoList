@@ -5,14 +5,18 @@
 const btn1 = document.querySelector('.btn1')
 
 btn1.addEventListener('click', function addDiv() {
-  let parentElement = document.querySelector('.item3')
-  let newDiv = document.createElement('div')
-  const textNewDiv = document.createTextNode('Hello')
-  newDiv.appendChild(textNewDiv)
-  parentElement.append(newDiv)
+  const parentElement = document.querySelector('.collector')
+  const task = document.querySelector('.task')
+  const newTask = task.cloneNode(true)
+  // const textNewDiv = document.createTextNode('Hello')
+  // newDiv.appendChild(textNewDiv)
+  parentElement.appendChild(newTask)
 })
 
-// var button = document.getElementById("button");
+// let div = document.createElement('div')
+// div.className = 'task'
+// div.innerHTML = '<strong>Всем привет!</strong> Вы прочитали важное сообщение.'
+// document.body.append(div)
 
 var i = 0 // начальное значение
 
@@ -50,21 +54,26 @@ const counter = function () {}
 
 // document.body.append(div)
 
-// document.querySelector('.example')
+/*
 
-// function sendForm(evt) {
-//   //получаем значение поля key
-//   const keyBox = document.search.key
-//   const val = keyBox.value
-//   if (val.lenght < 3) {
-//     alert('Недопустимая длина строки')
-//     evt.preventDefault()
-//   } else alert('Отправка завершена')
-// }
+<div id="row">
+<div class="page-block">
+Страница 1
+</div>
+</div> 
+<button class="addBtn">+Страница</button>
+<button class="addBtn">Готово</button>
 
-// const sendButton = document.search.send
-// sendButton.addEventListener('click', sendForm)
 
-// получим доступ к кнопке 2
+const addBtn = document.querySelector('.addBtn');
+var blockNumber = 2;
+addBtn.onclick = () => {
+  // Создаем блок и добавляем номер
+  const createBlock = document.createElement('div');
+  createBlock.className = 'page-block';
+  createBlock.innerText = 'Страница ' + blockNumber;
+  blockNumber++;
+  addBtn.insertAdjacentElement('beforebegin', createBlock);
+}
 
-// var button = getElementById('addButton')
+*/
