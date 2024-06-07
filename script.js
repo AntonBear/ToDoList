@@ -12,25 +12,30 @@ btn1.addEventListener('click', function addDiv() {
   parentElement.append(newDiv)
 })
 
+// var button = document.getElementById("button");
+
+var i = 0 // начальное значение
+
+btn1.addEventListener('click', function (e) {
+  i = i + 1
+  // let counter = document.querySelector
+  document.querySelector('.counter').innerHTML = i
+})
+
+// document.addEventListener('click', e => {
+//   var btn = e.target.closest('button')
+//   if (btn) ++btn.textContent
+// })
 
 class ToDoList {
-    constructor() {
-        this.posts = 0;
-        this.postsDone = 0;
-    }
-} 
-
-
-
-
-const arr = []
-const counter = function () {
-
+  constructor() {
+    this.posts = 0
+    this.postsDone = 0
+  }
 }
 
-
-
-
+const arr = []
+const counter = function () {}
 
 // const btn1 = document.querySelector('.btn1')
 
