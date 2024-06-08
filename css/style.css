@@ -50,6 +50,10 @@ body {
   grid-template-rows: auto;
 }
 
+.task {
+  list-style-type: none;
+}
+
 .item4 {
   /* grid-column: 1 / 2; */
   background-color: white;
