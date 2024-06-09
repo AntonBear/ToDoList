@@ -44,7 +44,7 @@ addTask.addEventListener('click', function () {
 
   // НЕ СРАБОТАЛ, но потом заработал ))
   let elements = document.querySelectorAll('li')
-  let buttom = document.querySelectorAll('div > button')
+  // let buttom = document.querySelectorAll('div > button')
 
   let counter = 0
   let counter1 = 0
@@ -53,10 +53,10 @@ addTask.addEventListener('click', function () {
     item.classList = `TaskLi-${counter}`
   })
 
-  buttom.forEach((item) => {
-    counter1++
-    item.classList = `buttonDelete-${counter1}`
-  })
+  // buttom.forEach((item) => {
+  //   counter1++
+  //   item.classList = `buttonDelete-${counter1}`
+  // })
 
   // попробуй воспольоваться методом
   // const spanList = [...document.querySelectorAll("span")];
